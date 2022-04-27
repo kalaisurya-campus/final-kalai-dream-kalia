@@ -41,7 +41,6 @@ class Login extends Component {
             [e.target.name]: e.target.value,
         });
     };
-  
 
     componentDidMount() {
         Aos.init();
@@ -98,30 +97,30 @@ class Login extends Component {
             .then((res) => {
                 console.log(res.data);
                 if (res.status == 200) {
-                    console.log(res.data);
+                    // console.log(res.data);
                     let token = document.cookie.split(";");
-                    console.log("tokens",token);
+                    console.log("tokes", token);
+
                     let payload = null;
                     if (token) {
                         token.forEach((item) => {
                             if (item.startsWith("header=")) {
-                                // console.log(item)
+                                console.log("no", item);
                                 payload = item.split("=")[1];
-                                // console.log(payload);
+                                console.log("pay",payload);
                             }
                         });
-                        // console.log(payload);
+                        // console.log("pay",payload);
 
                         if (payload) {
                             let info = JSON.parse(atob(payload.split(".")[1]));
-                            // console.log(info);
-                            // console.log(info.user_type
+                            console.log(info);
+                            console.log(info.user_type);
                             let data = this.setState({ empty_store: info });
-                            // console.log(data);
-
+console.log("dt",data);
                             return info;
                         }
-                        console.error("no token");
+                        // console.error("no token");
                     }
                 }
             })
@@ -161,7 +160,7 @@ class Login extends Component {
     }
     render() {
         const { email, password, empty_store } = this.state;
-        console.log("empty",empty_store);
+        console.log("empty", empty_store);
         // if (this.state.Login) {
         //   return <Redirect to="/create" />;
         // }
@@ -170,7 +169,6 @@ class Login extends Component {
         } else if (empty_store.user_type == 2) {
             return <Redirect to="/create" />;
         } else {
-            // alert("Somethinng Error page!!!");
             console.log("welcome too login page");
         }
         return (

@@ -84,7 +84,7 @@ class Signup extends Component {
             .then((res) => {
                 // console.log(res.data);
                 if (res.status === 201) {
-                    // console.log(res.data);
+                    console.log(res.data);
                     console.log("welcome");
                     // this.props.history.push("/login");
                 } else {
