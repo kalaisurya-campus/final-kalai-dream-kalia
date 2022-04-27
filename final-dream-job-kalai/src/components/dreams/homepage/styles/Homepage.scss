@@ -1,0 +1,127 @@
+@use "../../../../scss/" as *;
+
+.home_page {
+    width: 100%;
+    height: 100vh;
+    background-color: cyan;
+    // background: url("../../../../assets//dreams-images/dreams.jpg");
+    background: url("../../../../assets/dreams-images/login_signup.avif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .pages {
+        padding-top: 30vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 40px;
+        @include xsBreakPoint
+        {
+            padding-top: 25vh;
+        }
+        @include smBreakPoint
+        {
+            padding-top: 25vh;
+        }
+        @include mdBreakPoint
+        {
+            padding-top: 25vh;
+        }
+        @include lgBreakPoint
+        {
+            padding-top: 25vh;
+        }
+        .every
+        {
+            // width:50%;
+            font-size:4em;
+            // color:white;
+            font-family: "Gilroy-Bold";
+            font-style: oblique;
+            @include xsBreakPoint
+            {
+                font-size:2em;
+                text-align: center;
+            }
+            @include smBreakPoint
+            {
+                font-size:2.5em;
+                text-align: center;
+            }
+            @include mdBreakPoint
+            {
+                font-size:3.4em;
+                text-align: center;
+            }
+            @include lgBreakPoint
+            {
+                font-size:4em;
+                text-align: center;
+            }
+        }
+    }
+    .sign_up {
+        width: 10%;
+        padding: 10px;
+        @include xsBreakPoint
+        {
+            width:50%;
+        }
+        @include smBreakPoint
+        {
+            width:50%;
+        }
+        @include mdBreakPoint
+        {
+            width:30%;
+        }
+        @include lgBreakPoint
+        {
+            width:25%;
+        }
+        @include xxlBreakPoint
+        {
+            width:15%;
+        }
+        .nav-link {
+            color: white;
+        }
+    }
+    .sign_up:hover {
+        background-color: green;
+        cursor: pointer;
+    }
+    .login {
+        width: 10%;
+        padding: 10px;
+        @include xsBreakPoint
+        {
+            width:50%;
+        }
+        @include smBreakPoint
+        {
+            width:50%;
+        }
+        @include mdBreakPoint
+        {
+            width:30%;
+        }
+        @include lgBreakPoint
+        {
+            width:25%;
+        }
+        @include xxlBreakPoint
+        {
+            width:15%;
+        }
+        
+        .nav-link {
+            color: white;
+        }
+    }
+    .login:hover {
+        background-color: green;
+        cursor: pointer;
+    }
+}

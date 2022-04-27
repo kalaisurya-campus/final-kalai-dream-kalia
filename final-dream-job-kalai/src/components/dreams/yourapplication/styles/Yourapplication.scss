@@ -1,0 +1,215 @@
+@use "../../../../scss/" as *;
+
+.your_application {
+    width: 100%;
+    height: 100vh;
+    @include smBreakPoint
+    {
+        height:auto;
+    }
+
+    .nav_application {
+        width: 100%;
+        background-color: $background_color_navs;
+        border-radius: 0px 0px 3500px 3500px;
+        display: flex;
+        justify-content: space-around;
+        padding: 15px;
+        @include xsBreakPoint {
+            padding: 10px;
+            align-items: center;
+            border-radius: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            border-radius: 10px;
+            border: none;
+            background-color: black;
+            color: white;
+            font-weight: 800;
+            @include xsBreakPoint {
+                padding: 7px;
+            }
+        }
+    }
+    .split_your_application {
+        width: 100%;
+        display: flex;
+        @include xsBreakPoint {
+            flex-direction: column;
+        }
+        @include smBreakPoint
+        {
+          flex-direction: column;
+        }
+        @include mdBreakPoint
+        {
+          flex-direction: column;
+        }
+        @include lgBreakPoint
+        {
+          flex-direction: column;
+        }
+        @include xlBreakPoint
+        {
+            flex-direction: row;
+        }
+        .left_split_your_application {
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            @include xsBreakPoint {
+                width: 100%;
+                height: 50vh;
+            }
+            @include smBreakPoint {
+                width: 100%;
+               height:60vh;
+            }
+            @include mdBreakPoint {
+                width: 100%;
+            }
+            @include lgBreakPoint {
+                width: 100%;
+            }
+            @include xlBreakPoint {
+                width: 100%;
+                height:80vh;
+            }
+            @include xxlBreakPoint {
+                width: 90%;
+                height:80vh;
+            }
+            img {
+                width: 870px;
+                height: 570px;
+                border-radius: 200px 10px 200px 10px;
+                @include xsBreakPoint {
+                    width: 330px;
+                    height: 330px;
+                    border-radius: 30px;
+                }
+                @include smBreakPoint {
+                    width: 380px;
+                    height: 380px;
+                    border-radius: 30px;
+                }
+                @include mdBreakPoint {
+                    width: 580px;
+                    height: 580px;
+                    border-radius: 260px 260px 100px 100px;
+                }
+                @include xlBreakPoint {
+                    width: 480px;
+                    height: 480px;
+                    border-radius: 260px 260px 100px 100px;
+                }
+                @include xxlBreakPoint {
+                    width: 580px;
+                    height: 580px;
+                    border-radius: 200px 200px 100px 100px;
+                }
+            }
+        }
+        .right_split_your_application {
+            width: 50%;
+            @include xsBreakPoint {
+                width: 100%;
+                padding: 10px;
+            }
+            @include smBreakPoint {
+                width: 100%;
+                padding: 10px;
+            }
+            @include mdBreakPoint {
+                width: 100%;
+               padding-bottom: 10vh;
+            }
+            @include lgBreakPoint {
+                width: 100%;
+                padding-bottom: 10vh;
+            }
+            @include xlBreakPoint {
+                width: 100%;
+                padding: 10px;
+            }
+            @include xxlBreakPoint {
+                width: 90%;
+                padding: 10px;
+            }
+            .lists {
+                border: 4px solid $background_color_navs;
+                border-radius: 10px;
+                width: 100%;
+                display: flex;
+                padding: 20px;
+                border-radius: 100px 10px 100px 10px;
+                @include xsBreakPoint {
+                    flex-direction: column;
+                }
+                .card-body1 {
+                    width: 50%;
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    @include xsBreakPoint {
+                        width: 100%;
+                    }
+                    @include smBreakPoint {
+                        width: 100%;
+                    }
+                    @include mdBreakPoint {
+                        width: 100%;
+                    }
+                    @include lgBreakPoint {
+                        width: 100%;
+                    }
+                    @include xlBreakPoint {
+                        width: 100%;
+                    }
+                    @include xxlBreakPoint {
+                        width: 100%;
+                    }
+                    img {
+                        width: 240px;
+                        height: 240px;
+                        border-radius: 50%;
+                    }
+                }
+                .card-body2 {
+                    width: 50%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 15px;
+                    @include xsBreakPoint {
+                        width: 100%;
+                    }
+                    @include smBreakPoint {
+                        width: 100%;
+                    }
+                    @include mdBreakPoint {
+                        width: 100%;
+                    }
+                    @include lgBreakPoint {
+                        width: 100%;
+                    }
+                    @include xlBreakPoint {
+                        width: 100%;
+                    }
+                    @include xxlBreakPoint {
+                        width: 100%;
+                    }
+                    span {
+                        font-size: 1.2em;
+                    }
+                    .description {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}

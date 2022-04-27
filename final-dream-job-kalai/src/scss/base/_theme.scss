@@ -1,0 +1,18 @@
+@use '../abstract/variables' as *;
+
+$background: 'background';
+$text: 'text';
+$text-alt: 'text-alt';
+
+$themes: (
+    light: (
+        background: $background--light,
+        text: $text--light,
+        text-alt: $text-alt--light,
+    ),
+    dark: (
+        background: $background--dark,
+        text: $text--dark,
+        text-alt: $text-alt--dark,
+    ),
+);

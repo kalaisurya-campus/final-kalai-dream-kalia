@@ -1,0 +1,98 @@
+@use "../../../../scss/" as *;
+.navbar_jobs {
+    width: 100%;
+    .small_nav {
+        width: 100%;
+        border-radius: 0px 0px 3500px 3500px;
+        background-color: #663399;
+        padding: 20px;
+        color: white;
+        font-family: "Gilroy-Bold";
+      display: flex;
+      justify-content: space-around;
+        @include xsBreakPoint {
+            padding: 15px;
+        }
+        @include smBreakPoint {
+            padding: 15px;
+        }
+        @include mdBreakPoint {
+            padding: 15px;
+        }
+        @include lgBreakPoint {
+            padding: 15px;
+        }
+        @include xlBreakPoint {
+            padding: 15px;
+        }
+        @include xxlBreakPoint {
+            padding: 15px;
+        }
+        img
+        {
+            width:80px;
+            height:80px;
+            border-radius: 50%;;
+        }
+    }
+    .nav_jobs {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        background-color: #33ccff;
+        padding: 20px;
+        border-radius: 200px 200px 0px 0px;
+        @include xsBreakPoint {
+            padding: 15px;
+            border-radius: 50px 50px 0px 0px;
+        }
+        .jobs {
+            font-size: 1.6em;
+            @include xsBreakPoint {
+                font-size: 1.3em;
+            }
+        }
+        .nav_link {
+            text-decoration: none;
+            color: white;
+            font-family: "Gilroy-Bold";
+            transition: all 2s ease-in;
+        }
+
+        .active_page {
+            width: 10%;
+            padding: 5px;
+            border-radius: 10px;
+            background-color: #6600ff;
+            text-decoration: none;
+            // transition: all 2s ease-in;
+            transform: scale(1);
+            @include xsBreakPoint {
+                width: 30%;
+                padding: 0;
+            }
+            @include smBreakPoint {
+                width: 25%;
+                padding: 0;
+            }
+            @include mdBreakPoint {
+                width: 20%;
+                padding: 3px;
+            }
+            @include lgBreakPoint {
+                width: 20%;
+                padding: 3px;
+            }
+            @include xlBreakPoint {
+                width: 15%;
+                padding: 3px;
+            }
+        }
+        .active_page:hover {
+            background-color: #ff0066;
+            color: white;
+            cursor: pointer;
+        }
+    }
+}

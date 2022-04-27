@@ -1,0 +1,75 @@
+@use "../../../../scss/" as *;
+
+.main_section {
+    .nav-link {
+        color: black;
+    }
+    .card {
+        width: 100%;
+        border: 2px solid lightcoral;
+        padding: 20px;
+        border-radius: 40px;
+        .card-body_section {
+            width: 100%;
+            display: flex;
+            @include xsBreakPoint
+            {
+                flex-direction: column;
+            }
+            .left_cards_section {
+                width: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                gap: 20px;
+                @include xsBreakPoint
+                {
+                    width:100%;
+                }
+                img {
+                    width: 200px;
+                    height: 200px;
+                    border-radius: 50%;
+                }
+            }
+            .right_cards_section {
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                @include xsBreakPoint
+                {
+                    width:100%;
+                }
+                .split_cards_list {
+                    display: flex;
+                    justify-content: space-around;
+                    img {
+                        padding: 20px;
+                        width: 80px;
+                        height: 80px;
+                        // color:white !important;
+                        font-family: "Gilroy-Bold";
+                        font-size: 1.2em;
+                        border-radius: 20px;
+                        border: none;
+                        outline: none;
+                        background-color: transparent;
+                        color-interpolation-filters: $background--light;
+                        background-color: white;
+                    }
+                    .greenButton {
+                        background-color: white;
+                        color: white;
+                    }
+                
+                    .redButton {
+                        background-color: green;
+                        color: black;
+                    }
+                }
+            }
+        }
+    }
+}

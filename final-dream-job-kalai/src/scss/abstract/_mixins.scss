@@ -1,0 +1,120 @@
+@use "../base/theme" as *;
+
+//sass theming
+@mixin themed() {
+  @each $theme, $map in $themes {
+    .theme--#{$theme} & {
+      $theme-map: () !global;
+      @each $key, $submap in $map {
+        $value: map-get(map-get($themes, $theme), "#{$key}");
+        $theme-map: map-merge(
+          $theme-map,
+          (
+            $key: $value,
+          )
+        ) !global;
+      }
+      @content;
+      $theme-map: null !global;
+    }
+  }
+}
+
+// No Selection
+@mixin noSelectionAllowed {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+// Triangle mixin
+@mixin triangle($size: 2rem, $background: red, $radius: true) {
+  &,
+  &::before,
+  &::after {
+    width: $size;
+    height: $size;
+  }
+
+  position: relative;
+  overflow: hidden;
+  transform: translateY(50%) rotate(30deg) skewY(30deg) scaleX(0.866);
+  pointer-events: none;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    background: $background;
+    pointer-events: auto;
+  }
+
+  &::before {
+    // prettier-ignore
+    transform: scaleX(1.155) skewY(-30deg) rotate(-30deg) translateY(-42.3%) skewX(30deg) scaleY(0.866) translateX(-24%);
+  }
+
+  &::after {
+    // prettier-ignore
+    transform: scaleX(1.155) skewY(-30deg) rotate(-30deg) translateY(-42.3%) skewX(-30deg) scaleY(0.866) translateX(24%);
+  }
+
+  @if ($radius) {
+    border-radius: 20%;
+
+    &::before {
+      border-radius: 20% 20% 20% 55%;
+    }
+
+    &::after {
+      border-radius: 20% 20% 55% 20%;
+    }
+  }
+}
+
+// media queries
+@mixin xsBreakPoint {
+  @media (max-width: 575.98px) {
+    @content;
+  }
+}
+
+@mixin smBreakPoint {
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    @content;
+  }
+}
+
+@mixin mdBreakPoint {
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    @content;
+  }
+}
+
+@mixin lgBreakPoint {
+  @media (min-width: 992px) and (max-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin xlBreakPoint {
+  @media (min-width: 1200px) and (max-width: 1440px) {
+    @content;
+  }
+}
+
+@mixin xxlBreakPoint {
+  @media (min-width: 1440.01px) and (max-width: 1680px) {
+    @content;
+  }
+}
+
+@mixin xxxlBreakPoint {
+  @media (min-width: 1680.01px) {
+    @content;
+  }
+}

@@ -1,0 +1,109 @@
+@use "../../../../scss/" as *;
+
+.main {
+    width: 85%;
+    border: 2px solid red;
+    margin: 0 auto;
+    height: 100vh;
+    overflow: hidden;
+    @include xsBreakPoint {
+        width: 100%;
+        // height: 100vh;
+    }
+    .kalai-split {
+        width: 100%;
+        display: flex;
+        gap: 10px;
+        // height: 100vh;
+        padding: 10px;
+        @include xsBreakPoint {
+            flex-direction: column;
+        }
+        .left-kalai {
+            width: 50%;
+            border: 2px solid blue;
+            @include xsBreakPoint {
+                width: 100%;
+            }
+            .box-kalai {
+                width: 100%;
+                display: flex;
+                padding: 5px;
+                gap: 10px;
+                height: 40vh;
+                @include xsBreakPoint {
+                    flex-direction: column;
+                    // height: auto;
+                }
+                .box-left {
+                    width: 50%;
+                    border: 2px solid red;
+                    @include xsBreakPoint {
+                        width: 100%;
+                    }
+                    .inside-boxes {
+                        width: 100%;
+                        display: flex;
+                        gap: 10px;
+                        padding: 15px;
+                        margin: 0 auto;
+                        @include xsBreakPoint {
+                            flex-direction: column;
+                            padding: 4px;
+                        }
+                        .box-inside-left {
+                            width: 50%;
+                            height: 36vh;
+                            // border: 2px solid red;
+                            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                            overflow: hidden;
+                            overflow-y: auto;
+                            border-radius: 10px;
+                            padding: 12px;
+                            @include xsBreakPoint {
+                                width: 100%;
+                                border: 2px solid orchid;
+                                padding: 2px;
+                                height:30vh;
+                            }
+                        }
+                        .box-inside-right {
+                            width: 50%;
+                            // border:2px solid blue;
+                            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                            border-radius: 20px;
+                            @include xsBreakPoint {
+                                width: 100%;
+                            }
+                            img {
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                                border-radius: 20px;
+                                @include xsBreakPoint
+                                {
+                                    width:20%;
+                                    height:40%;
+                                }
+                            }
+                        }
+                    }
+                }
+                .box-right {
+                    width: 50%;
+                    border: 2px solid yellow;
+                    @include xsBreakPoint {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        .right-kalai {
+            width: 50%;
+            border: 2px solid orange;
+            @include xsBreakPoint {
+                width: 100%;
+            }
+        }
+    }
+}

@@ -1,0 +1,230 @@
+@use "../../../../../scss/" as *;
+.jobs_view {
+    width: 100%;
+    // height: 100vh;
+    .jobs_nav {
+        width: 100%;
+        background-color: $background_color_navs;
+        text-align: center;
+        padding: 15px;
+        display: flex;
+        justify-content: space-around;
+        .back {
+            width: 10%;
+            padding: 5px 30px;
+            @include xsBreakPoint {
+                width: 22%;
+                padding: 0;
+            }
+            @include smBreakPoint {
+                width: 22%;
+                padding: 0;
+            }
+            @include mdBreakPoint {
+                width: 22%;
+            }
+            @include lgBreakPoint {
+                width: 15%      
+             }
+             @include xlBreakPoint
+             {
+                 width:12%;
+             }
+            .nav-link {
+                color: white;
+            }
+        }
+
+        h1 {
+            font-size: 3em;
+            font-family: "Gilroy-Bold";
+            @include xsBreakPoint {
+                font-size: 1.2em;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            @include smBreakPoint {
+                font-size: 1.4em;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            @include mdBreakPoint {
+                font-size: 1.6em;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+    .split_jobs {
+        width: 100%;
+        display: flex;
+        @include xsBreakPoint {
+            flex-direction: column;
+        }
+        @include smBreakPoint {
+            flex-direction: column;
+        }
+        @include mdBreakPoint {
+            flex-direction: column;
+        }
+        @include lgBreakPoint {
+            flex-direction: column;
+        }
+        @include xlBreakPoint {
+            flex-direction: row;
+        }
+        .left_split_jobs {
+            width: 50%;
+            background-color: transparent;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+
+            @include xsBreakPoint {
+                width: 100%;
+                height: 50vh;
+            }
+            @include smBreakPoint {
+                width: 100%;
+                height: 70vh;
+            }
+            @include mdBreakPoint {
+                width: 100%;
+                height: 70vh;
+            }
+            @include lgBreakPoint {
+                width: 80%;
+                height: 90vh;
+                margin: 0 auto;
+            }
+            @include xlBreakPoint {
+                width: 100%;
+                height: 100vh;
+                margin: 0 auto;
+            }
+            img {
+                width: 80%;
+                border-radius: 10px;
+                background-color: transparent;
+                border-radius: 150px 0px 150px 0px;
+                @include xsBreakPoint {
+                    border-radius: 70px 0px 70px 0px;
+                    width: 92%;
+                }
+            }
+        }
+        .right_split_jobs {
+            width: 50%;
+            // padding-bottom: 10vh;
+            background: url("../../../../../assets/dreams-images/light.avif");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            @include xsBreakPoint {
+                width: 100%;
+                // padding-bottom: 10vh;
+            }
+            @include smBreakPoint {
+                width: 100%;
+                // padding-left: 5vw;
+            }
+            @include mdBreakPoint {
+                width: 100%;
+                // padding-left: 8vw;
+            }
+            @include lgBreakPoint {
+                width: 100%;
+                // padding-left: 12vw;
+            }
+            @include xlBreakPoint {
+                width: 100%;
+                padding: 10px;
+                z-index: 2;
+                position: relative;
+            }
+            .inside_scrolls {
+                height: 100vh;
+                overflow-y: scroll;
+                // padding-bottom: 40vh;
+                .nav_links {
+                    text-decoration: none;
+                    color: black;
+                }
+                .card {
+                    width: 100%;
+                    // height: 300px;
+                    border-radius: 20px;
+                    border: 2px solid lightcoral;
+                    // border-radius: 100px 10px 100px 10px;
+                    padding: 20px;
+
+                    // @include xsBreakPoint {
+                    //     width: 100%;
+
+                    // }
+                    // @include smBreakPoint {
+                    //     width: 100%;
+
+                    // }
+                    // @include mdBreakPoint {
+                    //     width: 100%;
+
+                    // }
+                    // @include lgBreakPoint {
+                    //     width: 100%;
+
+                    // }
+                    // @include xlBreakPoint {
+                    //     width: 100%;
+
+                    // }
+
+                    .card-body {
+                        width: 100%;
+                        display: flex;
+                        @include xsBreakPoint {
+                            flex-direction: column;
+                            align-items: center;
+                        }
+                        .left_card_jobs {
+                            width: 50%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            flex-direction: column;
+                            @include xsBreakPoint {
+                                width: 100%;
+                            }
+                            @include smBreakPoint {
+                                width: 100%;
+                            }
+
+                            img {
+                                width: 170px;
+                                height: 170px;
+                                border-radius: 50%;
+                            }
+                        }
+                        .right_card_jobs {
+                            width: 50%;
+                            display: flex;
+                            justify-content: center;
+                            flex-direction: column;
+                            gap: 10px;
+                            @include xsBreakPoint {
+                                width: 100%;
+                            }
+                            @include smBreakPoint {
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,178 @@
+@use "../../../../scss/" as *;
+
+.create_page {
+    width: 100%;
+    background: linear-gradient(to bottom left, rgb(94, 226, 226) 70%, #e7d177 50%);
+    padding-bottom: 5vh;
+    background: url("../../../../assets/dreams-images/cret.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @include xsBreakPoint {
+        padding-bottom: 10vh;
+    }
+
+    .navsed {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+       
+        @include xsBreakPoint {
+            display: flex;
+            gap: 40px;
+        }
+        .back {
+            width: 10%;
+            padding: 0;
+            @include xsBreakPoint {
+                width: 22%;
+                padding: 0;
+            }
+            @include smBreakPoint {
+                width: 22%;
+                padding: 0;
+            }
+            @include mdBreakPoint {
+                width: 22%;
+            }
+            @include lgBreakPoint {
+                width: 15%;
+            }
+            @include xlBreakPoint {
+                width: 12%;
+            }
+            .nav-link {
+                color: white;
+            }
+        }
+        .boxed {
+            img {
+                width: 120px;
+                height: 120px;
+                border-radius: 10%;
+                padding: 15px;
+                margin-top: 14px;
+                background-color: transparent;
+            }
+        }
+    }
+    .create_user {
+        padding-left: 25px;
+        font-size: 4em;
+        // color: white;
+        font-family: "Gilroy-Bold";
+        text-align: center;
+        padding-bottom: 10vh;
+        font-style: oblique;
+        @include xsBreakPoint {
+            width: 100%;
+            font-size: 1.8em;
+            padding-left: 3vw;
+        }
+        @include smBreakPoint {
+            width: 100%;
+            font-size: 2.2em;
+            padding-left: 1vw;
+        }
+        @include mdBreakPoint {
+            width: 100%;
+            font-size: 2.4em;
+            padding-left: 1vw;
+        }
+        @include lgBreakPoint {
+            width: 100%;
+            font-size: 2.4em;
+            padding-left: 1vw;
+        }
+    }
+    .create_forms {
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        @include xsBreakPoint {
+            flex-direction: column;
+        }
+        @include smBreakPoint {
+            flex-direction: column;
+        }
+        @include mdBreakPoint {
+            flex-direction: column;
+        }
+        .left_forms {
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-bottom: 10vh;
+            @include xsBreakPoint {
+                width: 100%;
+            }
+
+            @include smBreakPoint {
+                width: 100%;
+            }
+            @include mdBreakPoint {
+                width: 100%;
+            }
+            @include lgBreakPoint {
+                width: 100%;
+            }
+            //   background-color: #66a3ff;
+            form {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                input {
+                    padding: 15px;
+                    width: 100%;
+                    border: 2px solid black;
+                    border-radius: 10px;
+                    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+                }
+                select {
+                    width: 100%;
+                    padding: 15px;
+                    border: 2px solid black;
+                    border-radius: 10px;
+                    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+                }
+            }
+        }
+        .right_forms {
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            @include xsBreakPoint {
+                width: 100%;
+            }
+            @include smBreakPoint {
+                width: 100%;
+            }
+            @include mdBreakPoint {
+                width: 100%;
+            }
+            @include lgBreakPoint {
+                width: 100%;
+            }
+            img {
+                // width:80%;
+                object-fit: cover;
+                border-radius: 40px;
+                @include xsBreakPoint {
+                    width: 75%;
+                }
+                @include smBreakPoint {
+                    width: 80%;
+                }
+                @include mdBreakPoint {
+                    width: 60%;
+                }
+                @include lgBreakPoint {
+                    width: 90%;
+                }
+            }
+        }
+    }
+}

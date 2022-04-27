@@ -1,0 +1,192 @@
+@use "../../../../../scss/" as *;
+.status {
+    .status_nav {
+        width: 100%;
+        background-color: #33ccff;
+        display: flex;
+        justify-content: space-around;
+        padding: 10px;
+        // border-radius: 20px;
+        h1 {
+            font-size: 3em;
+            font-family: "Gilroy-Bold";
+            @include xsBreakPoint {
+                font-size: 1.2em;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            @include smBreakPoint {
+                font-size: 1.4em;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            @include mdBreakPoint {
+                font-size: 1.6em;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+        .back {
+            color: white;
+            width: 10%;
+            padding: 5px;
+            @include xsBreakPoint {
+                width: 22%;
+                padding: 0;
+            }
+            @include smBreakPoint {
+                width: 22%;
+                padding: 0;
+            }
+            @include mdBreakPoint {
+                width: 22%;
+                padding: 0;
+            }
+            @include lgBreakPoint {
+                width: 15%      
+             }
+             @include xlBreakPoint
+             {
+                 width:12%;
+             }
+            .nav-link {
+                color: white;
+            }
+        }
+    }
+
+    .split_status_page {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        @include xsBreakPoint {
+            flex-direction: column;
+            height: auto;
+        }
+        @include smBreakPoint {
+            flex-direction: column;
+            height: auto;
+        }
+        @include mdBreakPoint {
+            flex-direction: column;
+            height: auto;
+        }
+        .left_split_status_page {
+            width: 50%;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            @include xsBreakPoint {
+                width: 100%;
+            }
+            @include smBreakPoint {
+                width: 100%;
+            }
+            @include mdBreakPoint {
+                width: 100%;
+            }
+            @include lgBreakPoint {
+                width: 100%;
+            }
+            @include xlBreakPoint {
+                width: 100%;
+            }
+
+            img {
+                width: 70%;
+                @include xsBreakPoint {
+                    width: 100%;
+                }
+            }
+        }
+        .right_split_status_page {
+            width: 50%;
+            height: 100vh;
+            overflow-y: scroll;
+            // background-color: red;
+            display: flex;
+            // align-items: center;
+            // justify-content: center;
+            // flex-direction: column;
+            background: url("../../../../../assets/dreams-images/light.avif");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            @include xsBreakPoint {
+                width: 100%;
+            }
+            @include smBreakPoint {
+                width: 100%;
+            }
+            @include mdBreakPoint {
+                width: 100%;
+            }
+            @include lgBreakPoint {
+                width: 100%;
+            }
+            @include xlBreakPoint {
+                width: 100%;
+            }
+
+            .cards {
+                width: 100%;
+                height: 200px;
+                border-radius: 20px;
+
+                .card-body {
+                    width: 100%;
+                    display: flex;
+                    .left_card_jobs {
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        flex-direction: column;
+                        img {
+                            width: 500px;
+                            height: 500px;
+                            border-radius: 50%;
+                            padding: 30px;
+                            @include xsBreakPoint {
+                                width: 300px;
+                                height: 300px;
+                            }
+                        }
+
+                        form {
+                        }
+                        .back {
+                            width: 20%;
+                            border: none;
+                            color: white;
+                            padding: 10px 30px;
+                            @include xsBreakPoint {
+                                width: 32%;
+                                padding: 0;
+                            }
+                            @include smBreakPoint {
+                                width: 34%;
+                                padding: 0;
+                            }
+                            @include mdBreakPoint {
+                                width: 25%;
+                                padding: 0;
+                            }
+                            @include lgBreakPoint {
+                                width: 25%;
+                                padding: 0;
+                            }
+                            .nav-link {
+                                color: white;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

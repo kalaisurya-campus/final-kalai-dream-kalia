@@ -1,0 +1,273 @@
+@use "../../../../scss/" as *;
+.login_dreams {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background: linear-gradient(to bottom left, rgb(94, 226, 226) 70%, #e7d177 100%);
+    // background-color: #f2796e;
+    background: url("../../../../assets/dreams-images/loggs.avif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @include xsBreakPoint {
+        flex-direction: column;
+        height: auto;
+    }
+    @include smBreakPoint {
+        flex-direction: column;
+        height: auto;
+    }
+    @include mdBreakPoint {
+        flex-direction: column;
+        height: auto;
+    }
+    @include lgBreakPoint {
+        flex-direction: column;
+        height: auto;
+    }
+    @include xlBreakPoint {
+        flex-direction: row;
+        height: 100vh;
+    }
+    @include xxlBreakPoint {
+        flex-direction: row;
+        height: 100vh;
+    }
+    .left_login_dreams {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        @include xsBreakPoint {
+            width: 100%;
+        }
+        @include smBreakPoint {
+            width: 100%;
+        }
+        @include mdBreakPoint {
+            width: 100%;
+        }
+        @include lgBreakPoint {
+            width: 100%;
+        }
+        @include xlBreakPoint {
+            width: 100%;
+        }
+        @include xxlBreakPoint {
+            width: 100%;
+        }
+        h1 {
+            font-size: 4.4em;
+            font-family: "Gilroy-Bold";
+            font-style: oblique;
+            font-weight: 900;
+            color: white;
+            @include xsBreakPoint {
+                width: 100%;
+                font-size: 3em;
+                text-align: center;
+            }
+            @include smBreakPoint {
+                width: 100%;
+                font-size: 3.3em;
+                text-align: center;
+            }
+            @include mdBreakPoint {
+                width: 100%;
+                font-size: 3.8em;
+                text-align: center;
+            }
+            @include lgBreakPoint {
+                width: 100%;
+                font-size: 3.8em;
+                text-align: center;
+            }
+            @include xlBreakPoint {
+                width: 100%;
+                font-size: 3.8em;
+                text-align: center;
+            }
+            @include xxlBreakPoint {
+                width: 100%;
+                font-size: 4em;
+                text-align: center;
+            }
+        }
+        img {
+            width: 50%;
+            object-fit: cover;
+            border-radius: 40px 10px 40px 10px;
+
+            @include xsBreakPoint {
+                width: 80%;
+            }
+            @include smBreakPoint {
+                width: 70%;
+            }
+            @include mdBreakPoint {
+                width: 60%;
+            }
+            @include lgBreakPoint {
+                width: 60%;
+            }
+            @include xlBreakPoint {
+                width: 60%;
+            }
+            @include xxlBreakPoint {
+                width: 60%;
+            }
+        }
+    }
+    .right_login_dreams {
+        width: 50%;
+        padding-top: 20vh;
+        padding-bottom: 12vh;
+
+        @include xsBreakPoint {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        @include smBreakPoint {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        @include mdBreakPoint {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        @include lgBreakPoint {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        @include xlBreakPoint {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        @include xxlBreakPoint {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding-top: 10vh;
+            padding-left: 5vw;
+            input {
+                width: 40%;
+                padding: 10px;
+                border-radius: 10px;
+                border: none;
+                outline: none;
+                border-bottom: 2px solid black;
+                @include xsBreakPoint {
+                    width: 100%;
+                }
+                @include smBreakPoint {
+                    width: 100%;
+                }
+                @include mdBreakPoint {
+                    width: 100%;
+                }
+                @include lgBreakPoint {
+                    width: 100%;
+                }
+                @include xlBreakPoint {
+                    width: 100%;
+                }
+                @include xxlBreakPoint {
+                    width: 100%;
+                }
+            }
+            .submits {
+                padding: 10px;
+                border-radius: 10px;
+                font-size: 1.3em;
+                font-family: "Gilroy-Bold";
+                background-color: cyan;
+                border: none;
+                width: 15%;
+                @include xsBreakPoint {
+                    width: 50%;
+                }
+                @include smBreakPoint {
+                    width: 70%;
+                }
+                @include mdBreakPoint {
+                    width: 70%;
+                }
+                @include lgBreakPoint {
+                    width: 45%;
+                }
+                @include xlBreakPoint {
+                    width: 55%;
+                }
+                @include xxlBreakPoint {
+                    width: 60%;
+                }
+            }
+            .submits:hover {
+                color: blue;
+                cursor: pointer;
+                background-color: white;
+            }
+            lable {
+                font-size: 1.7em;
+                font-family: "Gilroy-Bold";
+            }
+            .password_show {
+                width: 20%;
+                padding: 11px;
+                border-radius: 10px;
+                border: none;
+            }
+            .password_show:hover {
+                background-color: green;
+                color: white;
+            }
+            .back {
+                padding: 5px;
+                border-radius: 10px;
+                font-family: "Gilroy-Bold";
+                background-color: cyan;
+                border: none;
+                width: 15%;
+                @include xsBreakPoint {
+                    width: 50%;
+                }
+                @include smBreakPoint {
+                    width: 70%;
+                }
+                @include mdBreakPoint {
+                    width: 70%;
+                }
+                @include lgBreakPoint {
+                    width: 45%;
+                }
+                @include xlBreakPoint {
+                    width: 55%;
+                }
+                @include xxlBreakPoint {
+                    width: 60%;
+                }
+            }
+            .nav-link {
+                color: black;
+            }
+        }
+    }
+}

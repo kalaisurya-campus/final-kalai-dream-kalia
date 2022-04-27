@@ -1,0 +1,251 @@
+@use "../../../../scss/" as *;
+.resume_section {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    @include xsBreakPoint {
+        height: auto;
+    }
+    @include smBreakPoint {
+        height: auto;
+    }
+    @include mdBreakPoint {
+        height: auto;
+    }
+    @include lgBreakPoint {
+        height: auto;
+    }
+    .nav_resume {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        padding: 10px;
+        background-color: $background_color_navs;
+        // border-radius: 0px 0px 3500px 3500px;
+        @include xsBreakPoint {
+            border-radius: 20px 10px 20px 10px;
+        }
+        @include smBreakPoint {
+            border-radius: 20px 10px 20px 10px;
+        }
+        @include mdBreakPoint {
+            border-radius: 10px 10px 100px 100px;
+        }
+        @include lgBreakPoint {
+            border-radius: 10px 10px 100px 100px;
+        }
+        .nav_link {
+            text-decoration: none;
+        }
+        h1 {
+            font-size: 2em;
+            font-family: "Gilroy-Bold";
+            padding-top: 2vh;
+            @include xsBreakPoint {
+                font-size: 1.4em;
+                text-align: center;
+            }
+            @include smBreakPoint {
+                font-size: 1.4em;
+                text-align: center;
+            }
+        }
+        img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            @include xsBreakPoint {
+                width: 50px;
+                height: 50px;
+            }
+            @include smBreakPoint {
+                width: 50px;
+                height: 50px;
+            }
+        }
+        .btn_buttons {
+            width: 100px;
+            padding: 10px 30px;
+            border-radius: 30px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: orangered;
+            border: none;
+            color: white;
+            font-size: 1.3em;
+            font-family: "Gilroy-Bold";
+        }
+        .btn_buttons:hover {
+            background-color: black;
+        }
+    }
+    .split_resume {
+        width: 100%;
+        display: flex;
+        @include xsBreakPoint {
+            flex-direction: column;
+        }
+        @include smBreakPoint {
+            flex-direction: column;
+        }
+        @include mdBreakPoint {
+            flex-direction: column;
+        }
+        @include lgBreakPoint {
+            flex-direction: column;
+        }
+        @include xlBreakPoint
+        {
+            flex-direction: row;
+        }
+        .left_resume {
+            width: 50%;
+            // border: 2px solid red;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(173, 243, 243);
+            // border-radius: 350px 100px 350px 150px;
+            @include xsBreakPoint {
+                width: 100%;
+                text-align: center;
+                border-radius: 40px;
+            }
+            @include smBreakPoint {
+                width: 100%;
+                text-align: center;
+                border-radius: 50px;
+            }
+            @include mdBreakPoint {
+                width: 100%;
+                text-align: center;
+                border-radius: 150px 0px 150px 0px;
+            }
+            @include lgBreakPoint {
+                width: 100%;
+                text-align: center;
+                border-radius: 150px 0px 150px 0px;
+            }
+            @include xxlBreakPoint {
+                width: 100%;
+                text-align: center;
+            }
+            img {
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                margin: 0 auto;
+            }
+            form {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding-top: 5vh;
+                gap: 20px;
+                // border: 4px solid #000080;
+                padding-bottom: 5vh;
+                // border-radius: 500px 0px 400px 20px;
+
+                input {
+                    padding: 20px;
+                    border: none;
+                    outline: none;
+                    border-bottom: 2px solid black;
+                    width: 100%;
+                    border-radius: 10px;
+                    @include xsBreakPoint {
+                        width: 100%;
+                    }
+                    @include mdBreakPoint {
+                        width: 100%;
+                    }
+                    @include lgBreakPoint {
+                        width: 100%;
+                    }
+                }
+
+                .apply {
+                    border: none;
+                    width: 45%;
+                    font-size: 1.8em;
+                    text-decoration: none;
+                    padding: 10px;
+                }
+                .apply:hover {
+                    background-color: $background_color_navs;
+                    color: white;
+                }
+
+                label {
+                    display: flex;
+                    justify-content: start;
+                    padding-top: 2.5vh;
+                }
+                input[type="file"] {
+                    // border: none;
+                    background-color: lightcyan;
+                    border-bottom: 4px solid black;
+                    border-radius: 20px;
+                }
+            }
+        }
+        .right_resume {
+            width: 50%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: lightpink;
+            // border-radius: 350px 100px 350px 150px;
+            @include xsBreakPoint {
+                width: 100%;
+                border-radius: 150px 0px 150px 10px;
+                height: 60vh;
+            }
+            @include smBreakPoint {
+                width: 100%;
+                border-radius: 150px 0px 150px 10px;
+                height: 80vh;
+            }
+            @include mdBreakPoint {
+                width: 100%;
+                border-radius: 150px 0px 150px 10px;
+                height: 100vh;
+            }
+            @include lgBreakPoint {
+                width: 100%;
+                border-radius: 150px 0px 150px 10px;
+                height: 80vh;
+            }
+            @include xlBreakPoint {
+                width: 100%;
+                border-radius: 250px 0px 250px 10px;
+                height: 80vh;
+            }
+            @include xxlBreakPoint {
+                width: 100%;
+                border-radius: 300px 0px 350px 10px;
+                height: 80vh;
+            }
+            img {
+                object-fit: cover;
+                border-radius: 60px 130px 150px 100px;
+                @include xsBreakPoint {
+                    width: 80%;
+                }
+                @include smBreakPoint {
+                    width: 80%;
+                }
+                @include mdBreakPoint {
+                    width: 80%;
+                }
+                @include lgBreakPoint {
+                    width: 60%;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,362 @@
+@use "../../../../scss/" as *;
+
+.signup_section {
+    width: 100%;
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    background: linear-gradient(to bottom left, rgb(94, 226, 226) 30%, #e7d177 100%);
+    background: url("../../../../assets/dreams-images/sign_ups.avif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @include xsBreakPoint {
+        flex-direction: column;
+        height: auto;
+    }
+    @include smBreakPoint {
+        flex-direction: column;
+        height: auto;
+    }
+    @include mdBreakPoint {
+        flex-direction: column;
+        height: auto;
+    }
+    @include lgBreakPoint {
+        flex-direction: column;
+        height: auto;
+    }
+    @include xlBreakPoint {
+        flex-direction: row;
+    }
+
+    .left_dream {
+        width: 50%;
+        display: flex;
+        height: 100vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        z-index: 2;
+        @include xsBreakPoint {
+            width: 100%;
+            height: 50vh;
+        }
+        @include smBreakPoint {
+            width: 100%;
+            height: 60vh;
+        }
+        @include mdBreakPoint {
+            width: 100%;
+            height: 80vh;
+        }
+        @include lgBreakPoint {
+            width: 100%;
+            height: 70vh;
+        }
+        @include xlBreakPoint {
+            width: 100%;
+        }
+        h1 {
+            font-size: 4.5em;
+            padding-bottom: 25px;
+            font-family: "Gilroy-Bold";
+            text-align: center;
+            font-style: oblique;
+            // color:;
+            font-style: oblique;
+            @include xsBreakPoint {
+                font-size: 2.2em;
+            }
+            @include smBreakPoint {
+                font-size: 3em;
+            }
+            @include mdBreakPoint {
+                font-size: 3.5em;
+            }
+            @include lgBreakPoint {
+                font-size: 3em;
+            }
+            @include xxlBreakPoint {
+                font-size: 3em;
+            }
+        }
+        img {
+            object-fit: cover;
+            border-radius: 100px 30px 100px 30px;
+            @include xsBreakPoint {
+                width: 90%;
+            }
+            @include smBreakPoint {
+                width: 75%;
+            }
+            @include mdBreakPoint {
+                width: 70%;
+            }
+            @include lgBreakPoint {
+                width: 60%;
+            }
+            @include xlBreakPoint {
+                width: 80%;
+            }
+            @include xxlBreakPoint {
+                width: 90%;
+            }
+        }
+    }
+    .right_dream {
+        width: 50%;
+        padding: 10vh 12px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        @include xsBreakPoint {
+            width: 100%;
+            border-radius: 200px 0px 100px 0px;
+        }
+        @include smBreakPoint {
+            width: 100%;
+            height: 100vh;
+           
+        }
+        @include mdBreakPoint {
+            width: 100%;
+        }
+        @include lgBreakPoint {
+            width: 100%;
+        }
+        @include xlBreakPoint {
+            width: 100%;
+        }
+        @include xxlBreakPoint {
+            width: 100%;
+        }
+        h1 {
+            font-size: 2.5em;
+            padding-bottom: 25px;
+            font-family: "Gilroy-Bold";
+            text-align: center;
+            font-style: oblique;
+          
+            // color: white;
+            @include xsBreakPoint {
+                font-size: 1.6em;
+                width: 100%;
+                margin: 0 auto;
+            }
+            @include smBreakPoint {
+                font-size: 1.5em;
+                width: 50%;
+                margin: 0 auto;
+            }
+            @include mdBreakPoint {
+                font-size: 2em;
+                width: 50%;
+                margin: 0 auto;
+            }
+        }
+
+        .inside_right_dream {
+            border-radius: 20px;
+            height: auto;
+            padding-left: 150px;
+            padding-bottom: 20px;
+            padding-top: 20px;
+            @include xsBreakPoint {
+                padding: 0;
+            }
+            @include smBreakPoint {
+                padding-left: 50px;
+            }
+            @include mdBreakPoint {
+                padding-left: 80px;
+            }
+            @include lgBreakPoint {
+                padding-left: 120px;
+            }
+
+            form {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                input {
+                    padding: 14px;
+                    width: 65%;
+                    border: none;
+                    border: 2px solid black;
+                    border-radius: 10px;
+                    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+                    @include xsBreakPoint {
+                        width: 100%;
+                    }
+                    @include smBreakPoint {
+                        width: 80%;
+                    }
+                    @include mdBreakPoint {
+                        width: 60%;
+                    }
+                    @include lgBreakPoint {
+                        width: 65%;
+                    }
+                    @include xxlBreakPoint {
+                        width: 80%;
+                    }
+                }
+
+                .split_boxes {
+                    width: 100%;
+                    display: flex;
+                    .left_boxes {
+                        width: 50%;
+                        padding-top: 5vh;
+                        .spans {
+                            border: 1px solid lightblue;
+                            padding: 15px;
+                            border-radius: 10px;
+                            background-color: white;
+                            color: black;
+                            font-size: 1.5em;
+                            font-family: "Gilroy-Bold";
+                        }
+                        .inside_data {
+                            width: 100%;
+                            .card {
+                                width: 70%;
+                                height: 100px;
+                                border: none;
+                                border-radius: 30px;
+
+                                input {
+                                    padding: 37px;
+                                    width: 100%;
+                                    border: none;
+                                    outline: none;
+                                    border-radius: 30px;
+                                    border: 2px solid #431c5d;
+                                }
+                            }
+                        }
+                    }
+                    .right_boxes {
+                        width: 50%;
+                        @include smBreakPoint {
+                            width: 100%;
+                        }
+                        .spans {
+                            border: 1px solid lightblue;
+                            padding: 15px;
+                            border-radius: 10px;
+                            background-color: white;
+                            color: black;
+                            border: 2px solid #fae5fa;
+                            font-size: 1.5em;
+                            font-family: "Gilroy-Bold";
+                            box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+                        }
+                        .inside_data {
+                            width: 100%;
+                            .card {
+                                width: 70%;
+                                height: 100px;
+                                border-radius: 30px;
+                                border: none;
+                                input {
+                                    padding: 37px;
+                                    width: 100%;
+                                    border: none;
+                                    outline: none;
+                                    border-radius: 30px;
+                                    border: 2px solid #431c5d;
+                                    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+                                        rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .buttonsed {
+                    padding: 15px;
+                    border-radius: 10px;
+                    background-color: cyan;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border: none;
+                    font-family: "Gilroy-Bold";
+                    font-size: 1.3em;
+                    width: 24%;
+
+                    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+                    @include xsBreakPoint {
+                        width: 50%;
+                        margin: 0 auto;
+                    }
+                }
+                .buttonsed:hover {
+                    color: blue;
+                    cursor: pointer;
+                    background-color: lightcyan;
+                }
+            }
+            .split_box {
+                display: flex;
+                gap: 20px;
+
+                .buttons {
+                    padding: 15px;
+                    border-radius: 10px;
+                    background-color: cyan;
+                    border: none;
+                    font-family: "Gilroy-Bold";
+                    font-size: 1.3em;
+                }
+                .buttons:hover {
+                    color: blue;
+                    cursor: pointer;
+                    background-color: lightcyan;
+                }
+            }
+            .toggles {
+                padding: 9px;
+                border-radius: 10px;
+                background-color: #323232;
+                color: white;
+                border: none;
+                font-family: "Gilroy-Bolds";
+                font-size: 1.4em;
+            }
+            .toggles:hover {
+                color: blue;
+                background-color: white;
+            }
+            .card {
+                width: 65%;
+                @include xsBreakPoint {
+                    width: 100%;
+                }
+                @include smBreakPoint {
+                    width: 90%;
+                }
+                @include mdBreakPoint {
+                    width: 70%;
+                }
+                @include lgBreakPoint {
+                    width: 65%;
+                }
+                @include xlBreakPoint {
+                    width: 65%;
+                }
+                @include xxlBreakPoint {
+                    width: 80%;
+                }
+                input {
+                    padding: 20px;
+                }
+            }
+        }
+    }
+}

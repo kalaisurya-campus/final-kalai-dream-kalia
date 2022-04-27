@@ -1,0 +1,22 @@
+@use '../base/typography' as *;
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Gilroy-Regular';
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  margin: 0 !important;
+  padding: 0 !important;
+  z-index: -1;
+}
+
+.theme--light,.theme--dark{
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100vw;
+  overflow-x: hidden;
+  z-index: -1;
+}

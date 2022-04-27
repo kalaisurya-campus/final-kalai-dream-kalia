@@ -1,0 +1,252 @@
+@use "../../../../scss/" as *;
+.your_deatile_jobs {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+
+    @include xsBreakPoint {
+        height: auto;
+    }
+    @include smBreakPoint {
+        height: auto;
+    }
+    @include mdBreakPoint {
+        height: auto;
+    }
+    .nav_your_jobs {
+        width: 100%;
+        background-color: $background_color_navs;
+        padding: 20px;
+        border-radius: 0px 0px 3500px 3500px;
+        h1 {
+            color: white;
+            font-family: "Gilroy-Bold";
+            text-align: center;
+            @include xsBreakPoint {
+                font-size: 1.3em;
+            }
+            @include smBreakPoint {
+                font-size: 1.4em;
+            }
+            @include mdBreakPoint {
+                font-size: 1.5em;
+            }
+            @include lgBreakPoint {
+                font-size: 1.8em;
+            }
+            @include xlBreakPoint {
+                font-size: 2em;
+            }
+            @include xxlBreakPoint {
+                font-size: 2.4em;
+            }
+        }
+    }
+    .inside_detailes_jobs {
+        width: 100%;
+        display: flex;
+        @include xsBreakPoint {
+            flex-direction: column;
+        }
+        @include smBreakPoint {
+            flex-direction: column;
+        }
+        @include mdBreakPoint {
+            flex-direction: column;
+        }
+        .left_detail_page {
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            @include xsBreakPoint {
+                width: 100%;
+                height: 50vh;
+            }
+            @include smBreakPoint {
+                width: 100%;
+                height: 60vh;
+            }
+            @include mdBreakPoint {
+                width: 100%;
+                height: 55vh;
+            }
+            @include lgBreakPoint {
+                width: 100%;
+                height: 100vh;
+            }
+            @include xlBreakPoint {
+                width: 100%;
+                height: 100vh;
+            }
+            @include xxlBreakPoint {
+                width: 100%;
+                height: 100vh;
+            }
+            img {
+                width: 50%;
+                border-radius: 120px 0px 120px 0px;
+                @include xsBreakPoint {
+                    width: 80%;
+                }
+                @include smBreakPoint {
+                    width: 70%;
+                }
+                @include mdBreakPoint {
+                    width: 60%;
+                }
+                @include lgBreakPoint {
+                    width: 80%;
+                }
+                @include xlBreakPoint {
+                    width: 70%;
+                }
+                @include xxlBreakPoint {
+                    width: 50%;
+                }
+            }
+        }
+        .right_detail_page {
+            width: 50%;
+            height: 100vh;
+            overflow-y: scroll;
+            border: 3px solid lightgray;
+            padding: 20px;
+            border-radius: 100px 0px 0px 200px;
+            padding-bottom: 15vh;
+            padding-top: 5vh;
+            @include xsBreakPoint {
+                width: 100%;
+            }
+            @include smBreakPoint {
+                width: 100%;
+            }
+            @include mdBreakPoint {
+                width: 96%;
+            }
+            @include lgBreakPoint {
+                width: 96%;
+            }
+            @include xlBreakPoint {
+                width: 100%;
+            }
+            @include xxlBreakPoint {
+                width: 100%;
+            }
+            img {
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+            }
+            .cards_left_box {
+                width: 100%;
+                display: flex;
+                border-bottom: 1px solid lightgray;
+
+                .left_box_page {
+                    width: 50%;
+                    padding-top: 3vh;
+                    @include xsBreakPoint {
+                        width: 100%;
+                    }
+                    @include smBreakPoint {
+                        width: 100%;
+                    }
+                    @include mdBreakPoint {
+                        width: 100%;
+                    }
+                    @include lgBreakPoint {
+                        width: 100%;
+                    }
+                    @include xlBreakPoint {
+                        width: 100%;
+                    }
+                    @include xxlBreakPoint {
+                        width: 100%;
+                    }
+                    h1 {
+                        font-size:1.3em;
+                        @include xsBreakPoint {
+                            font-size: 1.3em;
+                            width: 100%;
+                        }
+                        @include smBreakPoint {
+                            font-size: 1.4em;
+                            width: 100%;
+                        }
+                        @include mdBreakPoint {
+                            font-size: 1.6em;
+                            width: 100%;
+                        }
+                        @include lgBreakPoint {
+                            font-size: 1.8em;
+                            width: 100%;
+                        }
+                        @include xlBreakPoint {
+                            font-size: 1.4em;
+                            width: 100%;
+                        }
+                        @include xxlBreakPoint {
+                            font-size: 1.5em;
+                            width: 100%;
+                        }
+                    }
+                }
+                .right_box_page {
+                    width: 100%;
+                    padding-top: 3vh;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap:20px;
+                    @include xsBreakPoint {
+                        width: 100%;
+                    }
+                    @include smBreakPoint {
+                        width: 100%;
+                    }
+                    @include mdBreakPoint {
+                        width: 100%;
+                    }
+                    @include lgBreakPoint {
+                        width: 100%;
+                    }
+                    @include xlBreakPoint {
+                        width: 100%;
+                    }
+                    @include xxlBreakPoint {
+                        width: 100%;
+                    }
+                    h1 {
+                        font-size:1.3em;
+                        @include xsBreakPoint {
+                            font-size: 1.3em;
+                            width: 100%;
+                        }
+                        @include smBreakPoint {
+                            font-size: 1.4em;
+                            width: 100%;
+                        }
+                        @include mdBreakPoint {
+                            font-size: 1.6em;
+                            width: 100%;
+                        }
+                        @include lgBreakPoint {
+                            font-size: 1.8em;
+                            width: 100%;
+                        }
+                        @include xlBreakPoint {
+                            font-size: 1.4em;
+                            width: 100%;
+                        }
+                        @include xxlBreakPoint {
+                            font-size: 1.5em;
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

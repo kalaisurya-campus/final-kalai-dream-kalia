@@ -1,0 +1,62 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: 'Gilroy-Thin';
+  src: url('/assets/fonts/Gilroy-Thin.ttf')  format('truetype');
+}
+
+@font-face {
+  font-family: 'Gilroy-UltraLight';
+  src: url('/assets/fonts/Gilroy-UltraLight.ttf')  format('truetype');
+}
+
+@font-face {
+  font-family: 'Gilroy-Light';
+  src: url('/assets/fonts/Gilroy-Light.eot?#iefix') format('embedded-opentype'),
+       url('/assets/fonts/Gilroy-Light.woff') format('woff'),
+       url('/assets/fonts/Gilroy-Light.ttf')  format('truetype'),
+       url('/assets/fonts/Gilroy-Light.svg#Gilroy-Light') format('svg');
+}
+
+@font-face {
+  font-family: 'Gilroy-Regular';
+  src: url('/assets/fonts/Gilroy-Regular.eot?#iefix') format('embedded-opentype'),
+       url('/assets/fonts/Gilroy-Regular.woff') format('woff'),
+       url('/assets/fonts/Gilroy-Regular.ttf')  format('truetype'),
+       url('/assets/fonts/Gilroy-Regular.svg#Gilroy-Regular') format('svg');
+}
+
+@font-face {
+  font-family: 'Gilroy-Medium';
+  src: url('/assets/fonts/Gilroy-Medium.eot?#iefix') format('embedded-opentype'),
+       url('/assets/fonts/Gilroy-Medium.woff') format('woff'),
+       url('/assets/fonts/Gilroy-Medium.ttf')  format('truetype'),
+       url('/assets/fonts/Gilroy-Medium.svg#Gilroy-Medium') format('svg');
+}
+
+@font-face {
+  font-family: 'Gilroy-Bold';
+  src: url('/assets/fonts/Gilroy-Bold.ttf')  format('truetype');
+}
+
+@font-face {
+  font-family: 'Gilroy-SemiBold';
+  src: url('/assets/fonts/Gilroy-SemiBold.ttf')  format('truetype');
+}
+
+@font-face {
+  font-family: 'Gilroy-Heavy';
+  src: url('/assets/fonts/Gilroy-Heavy.eot?#iefix') format('embedded-opentype'),
+       url('/assets/fonts/Gilroy-Heavy.woff') format('woff'),
+       url('/assets/fonts/Gilroy-Heavy.ttf')  format('truetype'),
+       url('/assets/fonts/Gilroy-Heavy.svg#Gilroy-Medium') format('svg');
+}
+
+@font-face {
+  font-family: 'Gilroy-ExtraBold';
+  src: url('/assets/fonts/Gilroy-ExtraBold.ttf')  format('truetype');
+}
+
+.Gilroy-Bold{
+  font-family: 'Gilroy-Bold';
+}

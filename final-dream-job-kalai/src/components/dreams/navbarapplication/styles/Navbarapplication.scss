@@ -1,0 +1,49 @@
+@use "../../../../scss/" as *;
+.nav_bar_application {
+    width: 100%;
+    padding-top: 2vh;
+    // padding-bottom: 25vh;
+    .inside_application {
+        width: 100%;
+        background-color: #a64dff;
+        border-radius: 200px 0px 200px 10px;
+        display: flex;
+        justify-content: space-around;
+        padding: 30px;
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+        h4 {
+            color: white;
+            font-size: 1.7em;
+            font-family: "Gilroy-Bold";
+            text-align: center;
+            padding-top: 1vh;
+            @include xsBreakPoint
+            {
+                font-size:1em;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+
+        .active_navbars {
+            width: 8%;
+            border-radius: 10px;
+            background: lightseagreen;
+            padding: 0px 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            @include xsBreakPoint
+            {
+                width:4%;
+                padding:0px 50px;
+            }
+        }
+        .navlink {
+            text-decoration: none;
+            color: black;
+        }
+    }
+}

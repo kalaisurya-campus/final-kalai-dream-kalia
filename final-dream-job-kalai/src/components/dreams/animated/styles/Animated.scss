@@ -1,0 +1,34 @@
+@use "../../../../scss/" as *;
+
+.mobiles {
+    width: 100%;
+    position: relative;
+
+    .mobile_landing {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+            width: 50%;
+        }
+    }
+    #empty {
+        // position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        top: 55em;
+        .kalai {
+            width: 50%;
+          
+        }
+
+        #animate {
+            width: 40em;
+            position: absolute;
+           
+        }
+    }
+}

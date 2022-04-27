@@ -1,0 +1,243 @@
+@use "../../../../scss/" as *;
+.books_section {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    @include xsBreakPoint {
+        height: auto;
+    }
+    @include smBreakPoint {
+        height: auto;
+    }
+    @include mdBreakPoint {
+        height: auto;
+    }
+    @include lgBreakPoint {
+        height: auto;
+    }
+    .book_nav {
+        width: 100%;
+        background-color: $background_color_navs;
+       
+        padding: 15px;
+        display: flex;
+        justify-content: space-around;
+        @include xsBreakPoint {
+            padding: 10px;
+        }
+        @include smBreakPoint {
+            padding: 10px;
+        }
+        @include mdBreakPoint {
+            padding: 10px;
+        }
+
+        h1 {
+            font-size: 4em;
+            text-align: center;
+            font-family: "Gilroy-Bold";
+            font-style: oblique;
+            @include xsBreakPoint {
+                font-size: 1.5em;
+                display: flex;
+                align-items: center;
+            }
+            @include smBreakPoint {
+                font-size: 1.8em;
+                display: flex;
+                align-items: center;
+            }
+            @include mdBreakPoint {
+                font-size: 2.2em;
+                display: flex;
+                align-items: center;
+            }
+            @include lgBreakPoint {
+                font-size: 3em;
+                display: flex;
+                align-items: center;
+            }
+            @include xlBreakPoint {
+                font-size: 3.2em;
+                display: flex;
+                align-items: center;
+            }
+        }
+        img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            @include xsBreakPoint {
+                width: 70px;
+                height: 70px;
+                border-radius: 50%;
+            }
+            @include smBreakPoint {
+                width: 70px;
+                height: 70px;
+                border-radius: 50%;
+            }
+            @include mdBreakPoint {
+                width: 70px;
+                height: 70px;
+                border-radius: 50%;
+            }
+            @include xlBreakPoint {
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+            }
+        }
+    }
+    .books_read_split {
+        width: 100%;
+        display: flex;
+        @include xsBreakPoint {
+            flex-direction: column;
+        }
+        @include smBreakPoint {
+            flex-direction: column;
+        }
+        @include mdBreakPoint {
+            flex-direction: column;
+        }
+        @include lgBreakPoint {
+            flex-direction: column;
+        }
+        @include xlBreakPoint {
+            flex-direction: row;
+        }
+        .left_read_book {
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            @include xsBreakPoint {
+                width: 100%;
+                height: 50vh;
+            }
+            @include smBreakPoint {
+                width: 100%;
+                height: 80vh;
+            }
+            @include mdBreakPoint {
+                width: 100%;
+                height: 90vh;
+            }
+            @include lgBreakPoint {
+                width: 100%;
+                height: 90vh;
+            }
+            @include xlBreakPoint {
+                width: 100%;
+                height: 100vh;
+            }
+            @include xxlBreakPoint {
+                width: 100%;
+                height: 100vh;
+            }
+            img {
+                @include xsBreakPoint {
+                    width: 90%;
+                }
+            }
+        }
+        .right_read_book {
+            width: 50%;
+            height: 100vh;
+            overflow-y: scroll;
+            padding-bottom: 15vh;
+            padding-top: 5vh;
+            background: url('../../../../assets/dreams-images/books.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            @include xsBreakPoint {
+                width: 100%;
+            }
+            @include smBreakPoint {
+                width: 100%;
+                padding:20px;
+            }
+            @include mdBreakPoint {
+                width: 100%;
+                padding:20px;
+            }
+            @include lgBreakPoint {
+                width: 100%;
+                padding:30px;
+            }
+            @include xlBreakPoint {
+                width: 100%;
+                padding:20px;
+            }
+            @include xxlBreakPoint {
+                width: 100%;
+                padding-bottom: 15vh;
+            }
+            &::-webkit-scrollbar {
+                height: 15px !important;
+            }
+            &::-webkit-scrollbar-track {
+                height: 15px !important;
+                background: transparent !important;
+            }
+            &::-webkit-scrollbar-thumb {
+                height: 15px !important;
+                background: #e9ebfc !important;
+            }
+            .navlink {
+                text-decoration: none;
+                color: black;
+            }
+            .card {
+                width: 100%;
+                border-radius: 20px;
+                border: 3px solid cyan;
+                border-radius: 100px 10px 100px 10px;
+                @include xsBreakPoint {
+                    width: 100%;
+                }
+                .card-body {
+                    display: flex;
+                    @include xsBreakPoint
+                    {
+                        flex-direction: column;
+                        align-items: center;
+                    }
+                    .left_book_cards {
+                        width: 50%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        flex-direction: column;
+                        @include xsBreakPoint
+                        {
+                            width:100%;
+                        }
+                        img {
+                            width: 200px;
+                            height: 200px;
+                            border-radius: 50%;
+                        }
+                    }
+                    .right_book_cards {
+                        width: 50%;
+                        display: flex;
+                        // align-items: center;
+                        justify-content: center;
+                        flex-direction: column;
+                        @include xsBreakPoint
+                        {
+                            width:100%;
+                        }
+                        .description {
+                            line-height: 2;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,178 @@
+@use "../../../../scss/" as *;
+.notification_section {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    @include xsBreakPoint {
+        width: 100%;
+        height: auto;
+    }
+    @include smBreakPoint {
+        width: 100%;
+        height: auto;
+    }
+    @include mdBreakPoint {
+        width: 100%;
+        height: auto;
+    }
+    @include lgBreakPoint {
+        width: 100%;
+        height: auto;
+    }
+    @include xlBreakPoint {
+        width: 100%;
+        height: auto;
+    }
+    .nav_notification {
+        width: 100%;
+        background-color: $background_color_navs;
+        display: flex;
+        justify-content: space-around;
+        padding: 20px;
+        button {
+            padding: 10px 20px;
+            border-radius: 10px;
+            border: none;
+            background-color: black;
+            color: white;
+            font-weight: 800;
+        }
+        .cards {
+            .card__icon {
+                display: flex;
+                align-items: center;
+                justify-content: baseline;
+
+                svg {
+                    width: 100px;
+                    height: 50px;
+                }
+            }
+        }
+    }
+    .next_image_notification {
+        width: 100%;
+        display: flex;
+        @include xsBreakPoint {
+            width: 100%;
+            flex-direction: column-reverse;
+        }
+        @include smBreakPoint {
+            width: 100%;
+            flex-direction: column-reverse;
+        }
+        @include mdBreakPoint {
+            width: 100%;
+            flex-direction: column-reverse;
+        }
+        @include lgBreakPoint {
+            width: 100%;
+            flex-direction: column-reverse;
+        }
+        @include xlBreakPoint {
+            width: 100%;
+            flex-direction: row;
+        }
+
+        .left_notify {
+            width: 50%;
+            height: 100vh;
+            overflow-y: scroll;
+            padding-bottom: 25vh;
+            padding-top: 5vh;
+            background: url("../../../../assets/dreams-images/ntts.avif");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+           
+            @include xsBreakPoint {
+                width: 100%;
+            }
+            @include smBreakPoint {
+                width: 100%;
+            }
+            @include mdBreakPoint {
+                width: 100%;
+            }
+            @include lgBreakPoint {
+                width: 100%;
+            }
+            @include xlBreakPoint {
+                width: 100%;
+            }
+            .nav_link {
+                color: black;
+                text-decoration: none;
+            }
+            .card {
+                width: 100%;
+                height: 250px;
+                border-radius: 20px;
+                box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+                border-radius: 80px 10px 80px 10px;
+                padding: 10px;
+                @include xsBreakPoint {
+                    width: 100%;
+                    height: 300px;
+                }
+                .split_cards {
+                    display: flex;
+                    width: 100%;
+                    .left_cards {
+                        width: 50%;
+                        display: flex;
+                        align-items: center;
+                        flex-direction: column;
+                        justify-content: center;
+
+                        img {
+                            width: 100px;
+                            height: 100px;
+                            border-radius: 50%;
+                        }
+                        .company_name {
+                            font-size: 1.6em;
+                            font-family: "Gilroy-SemiBold";
+                        }
+                    }
+                    .right_cards {
+                        width: 50%;
+                        display: flex;
+                        justify-content: center;
+                        flex-direction: column;
+                        padding-top: 3vh;
+                    }
+                }
+            }
+        }
+        .right_notify {
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            // padding-top: 8vh;
+            flex-direction: column;
+            @include xsBreakPoint {
+                width: 100%;
+            }
+            @include smBreakPoint {
+                width: 100%;
+            }
+            @include mdBreakPoint {
+                width: 100%;
+            }
+            @include lgBreakPoint {
+                width: 100%;
+            }
+            @include xlBreakPoint {
+                width: 100%;
+            }
+            img {
+                width: 80%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+}

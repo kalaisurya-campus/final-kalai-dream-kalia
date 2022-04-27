@@ -1,0 +1,182 @@
+@use "../../../../scss/" as *;
+.search_box {
+    width: 100%;
+    // height:100vh;
+    // background: rgb(173, 243, 243);
+    background: url("../../../../assets/dreams-images/employe_images_search.avif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .bars {
+        .navbar {
+            width: 100%;
+            padding: 10px;
+            background-color: lightpink !important;
+
+            .back {
+                width: 6%;
+                padding: 0;
+                .nav-link
+                {
+                    color: white;
+                }
+            }
+            .let {
+                width: 100%;
+                font-size: 1.8em;
+                @include xsBreakPoint {
+                    font-size: 1.2em;
+                    width: 20%;
+                }
+                @include lgBreakPoint {
+                    font-size: 1.2em;
+                }
+            }
+            svg {
+                width: 80px;
+                height: 80px;
+                @include lgBreakPoint {
+                    width: 70px;
+                    height: 70px;
+                }
+            }
+            .image_book {
+                width: 100px;
+                height: 100px;
+                border-radius: 20px;
+                @include lgBreakPoint {
+                    width: 70px;
+                    height: 70px;
+                }
+            }
+            .books {
+                width: 100px;
+                height: 100px;
+                border-radius: 20px;
+                @include lgBreakPoint {
+                    width: 80px;
+                    height: 80px;
+                }
+            }
+        }
+    }
+
+    .search_data_field {
+        width: 100%;
+        .empty_store {
+            width: 100%;
+            padding-left: 2vw;
+            .nav-link {
+                color: black;
+            }
+            .card {
+                border: 2px solid lightsalmon;
+                border-radius: 30px;
+
+                .card-body {
+                    width: 100%;
+                    display: flex;
+                    .left_image_body {
+                        width: 50%;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        img {
+                            width: 200px;
+                            height: 200px;
+                            border-radius: 50%;
+                        }
+                    }
+                    .right_image_body {
+                        width: 50%;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 20px;
+                    }
+                }
+            }
+            .cards {
+                width: 100%;
+                border: 2px solid lightsalmon;
+                border-radius: 30px;
+                .split_green {
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 30px;
+                    @include xsBreakPoint {
+                        flex-direction: column;
+                    }
+                    .left_green {
+                        width: 50%;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        @include xsBreakPoint {
+                            width: 100%;
+                        }
+                        @include smBreakPoint {
+                            width: 100%;
+                        }
+                        img {
+                            width: 200px;
+                            height: 200px;
+                            border-radius: 50%;
+                        }
+                    }
+                    .right_green {
+                        width: 50%;
+                        @include xsBreakPoint {
+                            width: 100%;
+                            text-align: center;
+                        }
+                        @include smBreakPoint {
+                            width: 100%;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .cards {
+        display: flex;
+        flex-direction: row;
+
+        .card__icon {
+            svg {
+                width: 100px;
+                height: 50px;
+                @include xsBreakPoint {
+                    width: 50px;
+                    height: 20px;
+                }
+            }
+        }
+    }
+    img {
+        padding: 20px;
+        width: 80px;
+        height: 80px;
+        // color:white !important;
+        font-family: "Gilroy-Bold";
+        font-size: 1.2em;
+        border-radius: 20px;
+        border: none;
+        outline: none;
+        background-color: transparent;
+        color-interpolation-filters: $background--light;
+        background-color: white;
+    }
+    .greenButton {
+        background-color: white;
+        color: white;
+    }
+
+    .redButton {
+        background-color: green;
+        color: black;
+    }
+}
